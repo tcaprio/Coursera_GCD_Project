@@ -5,6 +5,7 @@
 require(dplyr)
 
 ## read in feature names to add colnames to train/test data
+setwd("UCI HAR Dataset")
 features <- read.table("features.txt", colClasses="character") 
 featNames <- features[,2]
 
