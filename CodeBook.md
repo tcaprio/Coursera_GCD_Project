@@ -13,51 +13,51 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+- tBodyAcc-XYZ
+- tGravityAcc-XYZ
+- tBodyAccJerk-XYZ
+- tBodyGyro-XYZ
+- tBodyGyroJerk-XYZ
+- tBodyAccMag
+- tGravityAccMag
+- tBodyAccJerkMag
+- tBodyGyroMag
+- tBodyGyroJerkMag
+- fBodyAcc-XYZ
+- fBodyAccJerk-XYZ
+- fBodyGyro-XYZ
+- fBodyAccMag
+- fBodyAccJerkMag
+- fBodyGyroMag
+- fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+- mean(): Mean value
+- std(): Standard deviation
+- mad(): Median absolute deviation 
+- max(): Largest value in array
+- min(): Smallest value in array
+- sma(): Signal magnitude area
+- energy(): Energy measure. Sum of the squares divided by the number of values. 
+- iqr(): Interquartile range 
+- entropy(): Signal entropy
+- arCoeff(): Autorregresion coefficients with Burg order equal to 4
+- correlation(): correlation coefficient between two signals
+- maxInds(): index of the frequency component with largest magnitude
+- meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+- skewness(): skewness of the frequency domain signal 
+- kurtosis(): kurtosis of the frequency domain signal 
+- bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+- angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+- gravityMean
+- tBodyAccMean
+- tBodyAccJerkMean
+- tBodyGyroMean
+- tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
@@ -73,82 +73,79 @@ The tidy data produced by run_analysis.R includes only measurements on mean and 
 Variable names have been modified from their originals to replace abbreviations with meaningful descriptions and are as follows:
 ==================================================================
 
-timeBodyAcceleration-mean()-X
-timeBodyAcceleration-mean()-Y
-timeBodyAcceleration-mean()-Z
-timeBodyAcceleration-std()-X
-timeBodyAcceleration-std()-Y
-timeBodyAcceleration-std()-Z
-timeGravityAcceleration-mean()-X
-timeGravityAcceleration-mean()-Y
-timeGravityAcceleration-mean()-Z
-timeGravityAcceleration-std()-X
-timeGravityAcceleration-std()-Y
-timeGravityAcceleration-std()-Z
-timeBodyAccelerationJerk-mean()-X
-timeBodyAccelerationJerk-mean()-Y
-timeBodyAccelerationJerk-mean()-Z
-timeBodyAccelerationJerk-std()-X
-timeBodyAccelerationJerk-std()-Y
-timeBodyAccelerationJerk-std()-Z
-timeBodyGyroscope-mean()-X
-timeBodyGyroscope-mean()-Y
-timeBodyGyroscope-mean()-Z
-timeBodyGyroscope-std()-X
-timeBodyGyroscope-std()-Y
-timeBodyGyroscope-std()-Z
-timeBodyGyroscopeJerk-mean()-X
-timeBodyGyroscopeJerk-mean()-Y
-timeBodyGyroscopeJerk-mean()-Z
-timeBodyGyroscopeJerk-std()-X
-timeBodyGyroscopeJerk-std()-Y
-timeBodyGyroscopeJerk-std()-Z
-timeBodyAccelerationMagnitude-mean()
-timeBodyAccelerationMagnitude-std()
-timeGravityAccelerationMagnitude-mean()
-timeGravityAccelerationMagnitude-std()
-timeBodyAccelerationJerkMagnitude-mean()
-timeBodyAccelerationJerkMagnitude-std()
-timeBodyGyroscopeMagnitude-mean()
-timeBodyGyroscopeMagnitude-std()
-timeBodyGyroscopeJerkMagnitude-mean()
-timeBodyGyroscopeJerkMagnitude-std()
-frequencyBodyAcceleration-mean()-X
-frequencyBodyAcceleration-mean()-Y
-frequencyBodyAcceleration-mean()-Z
-frequencyBodyAcceleration-std()-X
-frequencyBodyAcceleration-std()-Y
-frequencyBodyAcceleration-std()-Z
-frequencyBodyAcceleration-meanFreq()-X
-frequencyBodyAcceleration-meanFreq()-Y
-frequencyBodyAcceleration-meanFreq()-Z
-frequencyBodyAccelerationJerk-mean()-X
-frequencyBodyAccelerationJerk-mean()-Y
-frequencyBodyAccelerationJerk-mean()-Z
-frequencyBodyAccelerationJerk-std()-X
-frequencyBodyAccelerationJerk-std()-Y
-frequencyBodyAccelerationJerk-std()-Z
-frequencyBodyAccelerationJerk-meanFreq()-X
-frequencyBodyAccelerationJerk-meanFreq()-Y
-frequencyBodyAccelerationJerk-meanFreq()-Z
-frequencyBodyGyroscope-mean()-X
-frequencyBodyGyroscope-mean()-Y
-frequencyBodyGyroscope-mean()-Z
-frequencyBodyGyroscope-std()-X
-frequencyBodyGyroscope-std()-Y
-frequencyBodyGyroscope-std()-Z
-frequencyBodyGyroscope-meanFreq()-X
-frequencyBodyGyroscope-meanFreq()-Y
-frequencyBodyGyroscope-meanFreq()-Z
-frequencyBodyAccelerationMagnitude-mean()
-frequencyBodyAccelerationMagnitude-std()
-frequencyBodyAccelerationMagnitude-meanFreq()
-frequencyBodyBodyAccelerationJerkMagnitude-mean()
-frequencyBodyBodyAccelerationJerkMagnitude-std()
-frequencyBodyBodyAccelerationJerkMagnitude-meanFreq()
-frequencyBodyBodyGyroscopeMagnitude-mean()
-frequencyBodyBodyGyroscopeMagnitude-std()
-frequencyBodyBodyGyroscopeMagnitude-meanFreq()
-frequencyBodyBodyGyroscopeJerkMagnitude-mean()
-frequencyBodyBodyGyroscopeJerkMagnitude-std()
-frequencyBodyBodyGyroscopeJerkMagnitude-meanFreq()
+- timeBodyAcceleration-mean()-X
+- timeBodyAcceleration-mean()-Y
+- timeBodyAcceleration-mean()-Z
+- timeBodyAcceleration-std()-X
+- timeBodyAcceleration-std()-Y
+- timeBodyAcceleration-std()-Z
+- timeGravityAcceleration-mean()-X
+- timeGravityAcceleration-mean()-Y
+- timeGravityAcceleration-mean()-Z
+- timeGravityAcceleration-std()-X
+- timeGravityAcceleration-std()-Y
+- timeGravityAcceleration-std()-Z
+- timeBodyAccelerationJerk-mean()-Y
+- timeBodyAccelerationJerk-std()-X
+- timeBodyAccelerationJerk-std()-Y
+- timeBodyGyroscope-mean()-X
+- timeBodyGyroscope-mean()-Y
+- timeBodyGyroscope-mean()-Z
+- timeBodyGyroscope-std()-X
+- timeBodyGyroscope-std()-Y
+- timeBodyGyroscope-std()-Z
+- timeBodyGyroscopeJerk-mean()-X
+- timeBodyGyroscopeJerk-mean()-Y
+- timeBodyGyroscopeJerk-mean()-Z
+- timeBodyGyroscopeJerk-std()-X
+- timeBodyGyroscopeJerk-std()-Y
+- timeBodyGyroscopeJerk-std()-Z
+- timeBodyAccelerationMagnitude-mean()
+- timeBodyAccelerationMagnitude-std()
+- timeGravityAccelerationMagnitude-mean()
+- timeGravityAccelerationMagnitude-std()
+- timeBodyAccelerationJerkMagnitude-mean()
+- timeBodyAccelerationJerkMagnitude-std()
+- timeBodyGyroscopeMagnitude-mean()
+- timeBodyGyroscopeMagnitude-std()
+- timeBodyGyroscopeJerkMagnitude-mean()
+- timeBodyGyroscopeJerkMagnitude-std()
+- frequencyBodyAcceleration-mean()-X
+- frequencyBodyAcceleration-mean()-Y
+- frequencyBodyAcceleration-mean()-Z
+- frequencyBodyAcceleration-std()-X
+- frequencyBodyAcceleration-std()-Y
+- frequencyBodyAcceleration-std()-Z
+- frequencyBodyAcceleration-meanFreq()-X
+- frequencyBodyAcceleration-meanFreq()-Y
+- frequencyBodyAcceleration-meanFreq()-Z
+- frequencyBodyAccelerationJerk-mean()-X
+- frequencyBodyAccelerationJerk-mean()-Y
+- frequencyBodyAccelerationJerk-mean()-Z
+- frequencyBodyAccelerationJerk-std()-X
+- frequencyBodyAccelerationJerk-std()-Y
+- frequencyBodyAccelerationJerk-std()-Z
+- frequencyBodyAccelerationJerk-meanFreq()-X
+- frequencyBodyAccelerationJerk-meanFreq()-Y
+- frequencyBodyAccelerationJerk-meanFreq()-Z
+- frequencyBodyGyroscope-mean()-X
+- frequencyBodyGyroscope-mean()-Y
+- frequencyBodyGyroscope-mean()-Z
+- frequencyBodyGyroscope-std()-X
+- frequencyBodyGyroscope-std()-Y
+- frequencyBodyGyroscope-std()-Z
+- frequencyBodyGyroscope-meanFreq()-X
+- frequencyBodyGyroscope-meanFreq()-Y
+- frequencyBodyGyroscope-meanFreq()-Z
+- frequencyBodyAccelerationMagnitude-mean()
+- frequencyBodyAccelerationMagnitude-std()
+- frequencyBodyAccelerationMagnitude-meanFreq()
+- frequencyBodyBodyAccelerationJerkMagnitude-mean()
+- frequencyBodyBodyAccelerationJerkMagnitude-std()
+- frequencyBodyBodyAccelerationJerkMagnitude-meanFreq()
+- frequencyBodyBodyGyroscopeMagnitude-mean()
+- frequencyBodyBodyGyroscopeMagnitude-std()
+- frequencyBodyBodyGyroscopeMagnitude-meanFreq()
+- frequencyBodyBodyGyroscopeJerkMagnitude-mean()
+- frequencyBodyBodyGyroscopeJerkMagnitude-std()
+- frequencyBodyBodyGyroscopeJerkMagnitude-meanFreq()
